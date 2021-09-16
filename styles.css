@@ -1,0 +1,65 @@
+/* font-family: 'Allison', cursive;
+font-family: 'Azeret Mono', monospace;
+font-family: 'Rampart One', cursive;
+font-family: 'Righteous', cursive;
+font-family: 'Rubik Mono One', sans-serif;
+font-family: 'Sacramento', cursive;
+font-family: 'Tangerine', cursive; */
+*{
+    box-sizing: border-box;
+}
+h1{
+    color: red;
+}
+.listBody{
+    padding: 20px;
+    width: 40vw;    
+    background-color: pink;
+    min-height: 20vw;    
+    border-radius: 50px;
+    box-shadow: 0 0 30px black;
+}
+span.taskName{
+    margin-left: 2vw;
+    /* text-decoration: none; */
+}
+.listHead{
+    font-family: 'Rampart one', cursive;
+    font-size: 50px;
+    font-weight: 700;
+}
+ul *{
+    font-size: 30px;
+    list-style-type: none;
+}
+.content{
+    display: flex;
+    justify-content: space-around;
+}
+.listBody *{
+    /* border: 1px solid red; */
+    user-select: none;
+    
+}
+.checkedTask{
+    text-decoration: line-through;
+    transition: all 1s;
+}
+
+div.inputTask input{
+    width: 30vw;
+    font-size: 20px;
+}
+.delete:hover{
+    color: red;
+}
+.delete:active{
+    text-shadow: 0 0 30px red;
+}
+.check:hover{
+    color: rgb(35, 182, 35);
+    /* background-color: black; */
+}
+.check:active{
+    text-shadow: 0 0 20px red;
+}

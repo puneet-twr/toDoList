@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Allison&family=Azeret+Mono:wght@200&family=Rampart+One&family=Righteous&family=Rubik+Mono+One&family=Sacramento&family=Tangerine:wght@700&display=swap" rel="stylesheet">
+
+    <title>To-Do-List</title>
+</head>
+<body>
+    <div class="background">
+        <div class="mainBody">
+            <h1>To Do List &#10004  &#9745  &#10003  &#9744  &#10008   &#128504   &#128503</h1>
+            <div class="content">
+                <div class="inputTask">
+                    <h2>Press Enter to add the task</h2>
+                    <input type="text" name="" placeholder="Enter your task to be added" id="">
+                </div>
+                <div class="listBody">
+                    <div class="listBackground">
+                        <div class="listHead"><em>Your Tasks</em></div>
+                        <div class="tasks">
+                            <ul>
+                                <li><span class="function"><span class="check" onclick='taskFinished(this.parentNode.parentNode)'>&#9745</span><span class="delete" onclick='removeTask(this.parentNode.parentNode)'>&#128503</span></span><span class="taskName">Go to market</span></li>
+                                <!-- <li><span class="function"><span class="check">&#9745</span><span class="delete">&#128503</span></span><span class="taskName">Go to Gym</span></li>  -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="scripts.js"></script>
+</body>
+</html>
